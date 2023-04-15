@@ -1,0 +1,705 @@
+//! MAIN
+//! ----- FOOTER ------ !\\
+@media screen and (max-width: 1059px) {
+    body {
+        footer {
+            height: 700px;
+
+            .footerTop {
+                flex-wrap: wrap;
+
+                .part1,
+                .part2,
+                .part3,
+                .part4,
+                .part5,
+                .part6 {
+                    height: 200px;
+                    padding: 0;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                .part1 {
+                    width: 50%;
+                }
+
+                .part2 {
+                    width: 50%;
+                }
+
+                .part3 {
+                    width: 30%;
+                    flex-direction: column;
+                }
+
+                .part4 {
+                    width: 70%;
+                }
+
+                .part5 {
+                    width: 40%;
+                    flex-direction: column;
+                }
+
+                .part6 {
+                    width: 60%;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 643px) {
+    body {
+        footer {
+            .footerTop {
+                .part2 {
+                    flex-direction: column;
+                }
+
+                .part4 {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        footer {
+            .footerTop {
+                .part1 {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .part5 {
+                    display: none;
+                }
+
+                .part6 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//! ----- NEWS ------ !\\
+@media screen and (max-width: 1261px) {
+    body {
+        main {
+            .news {
+                height: 1100px;
+
+                .newsText {
+                    p {
+                        width: 90%;
+                    }
+                }
+
+                .newsCards {
+                    height: 900px;
+                    gap: 22px;
+                    flex-wrap: wrap;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
+
+//! ----- ABOUT NAILA ------ !\\
+
+@media screen and (max-width : 985px) {
+    body {
+        main {
+            .aboutNaila {
+                .containerAboutNaila {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 832px) {
+    body {
+        main {
+            .aboutNaila {
+                height: auto;
+
+                .containerAboutNaila {
+                    height: auto;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .textForContainerAboutNaila {
+                        width: 100%;
+                        padding: 20px;
+                        height: 350px;
+                    }
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- ONLINE LESSON ------ !\\
+
+@media screen and (max-width: 851px) {
+    body {
+        main {
+            .onlineLesson {
+                .textOnlineLesson {
+                    p {
+                        width: 90%;
+                    }
+                }
+
+                .cardsOnlineLesson {
+                    flex-direction: column;
+                    height: 1000px;
+                    padding: 0;
+                }
+            }
+
+            .onlineExams {
+                .textOnlineExams {
+                    p {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        main {
+            .onlineLesson {
+                .textOnlineLesson {
+                    height: 200px;
+
+                    h1 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 456px) {
+    body {
+        main {
+            .onlineLesson {
+                .cardsOnlineLesson {
+
+                    .cardOnlineLesson,
+                    .cardsOnlineLesson2,
+                    .cardsOnlineLesson3 {
+                        width: 94%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- POPULAR COURSE ----- !\\
+
+@media screen and (max-width: 1254px) {
+    body {
+        main {
+            .popularCourse {
+                .textArea {
+                    height: 150px;
+
+                    p {
+                        width: 90%;
+                    }
+
+                    img {
+                        display: none;
+                    }
+                }
+
+                .cardsInPopularCourse {
+                    flex-wrap: wrap;
+                    height: 850px;
+                    justify-content: center;
+                    gap: 20px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
+
+//! ----- INFO ----- !\\
+
+@media screen and (max-width: 1088px) {
+    body {
+        main {
+            .info {
+                .girlPicture {
+                    width: 90%;
+                }
+
+                .purpleSquare {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        main {
+            .info {
+                .lightBlueSquare {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    body {
+        main {
+            .info {
+                flex-direction: column;
+
+                .infoPicture {
+                    width: 100%;
+                }
+
+                .lightBlueSquare {
+                    display: none;
+                }
+
+                .infoText {
+                    width: 100%;
+                    align-items: center;
+
+                    h1 {
+                        font-weight: 1000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- HEADER -> MIDDLE HEADER ----- !\\
+
+@media screen and (max-width: 1322px) {
+    body {
+        header {
+            .middleHeader {
+                .topMiddleHeader {
+                    .pictureTopMiddleHeader {
+                        .purpleRectangle {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 964px) {
+    body {
+        header {
+            .middleHeader {
+                .topMiddleHeader {
+                    .pictureTopMiddleHeader {
+                        .mainPicture {
+                            width: 90%;
+
+                        }
+
+                        .orangeCircle {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 829px) {
+    body {
+        header {
+            .middleHeader {
+                .topMiddleHeader {
+                    .pictureTopMiddleHeader {
+                        .lightBlueRectangle {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        header {
+            .middleHeader {
+                height: auto;
+
+                .topMiddleHeader {
+                    flex-direction: column;
+
+                    .infoTopMiddleHeader {
+                        width: 100%;
+                        padding: 0;
+                        align-items: center;
+                        text-align: center;
+                        height: 350px;
+                        gap: 10px;
+
+                        .infoTextOfHeader {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .pictureTopMiddleHeader {
+                        width: 100%;
+                        height: 350px;
+
+                        .purpleCircle {
+                            display: none;
+                        }
+
+                        .lightBlueCircle {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    body {
+        header {
+            .middleHeader {
+                .topMiddleHeader {
+                    .infoTopMiddleHeader {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- HEADER -> NAVBAR ----- !\\
+
+@media screen and (max-width: 842px) {
+    body {
+        header {
+            .navbar {
+
+                .navbarButtons {
+                    width: 240px;
+
+                    .hMenu {
+                        display: flex;
+                    }
+                }
+
+                .navbarLinks.active {
+                    transform: translateX(0);
+                }
+
+                .navbarLinks {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    background-color: white;
+                    align-items: flex-start;
+                    position: absolute;
+                    left: 0;
+                    top: 126px;
+                    z-index: 5;
+                    transform: translateX(100%);
+                    transition: 0.5s all ease-in-out;
+
+                    .links {
+                        width: 100%;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        background-color: #fbfbfb;
+                        padding-left: 20px;
+                    }
+
+                    .anotherLinks {
+                        background-color: #e0e0e0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 586px) {
+    body {
+        header {
+            .topPartHeader {
+                padding: 0 10px;
+
+                .gmailAndPhoneInfo {
+                    width: 260px;
+
+                    .phone {
+                        font-size: 13px;
+                    }
+
+                    .email {
+                        font-size: 13px;
+                    }
+                }
+
+                .contactPart {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+//! ----- CERTIFICATE ----- !\\
+
+@media screen and (max-width: 647px) {
+    body {
+        main {
+            .certificate {
+                .forText {
+                    p {
+                        width: 96%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- BOOKS ----- !\\
+
+@media screen and (max-width: 849px) {
+    body {
+        main {
+            .books {
+                .forText {
+                    height: 180px;
+
+                    p {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    body {
+        main {
+            .books {
+                .forCarousel {
+                    .owl-books {
+                        .item {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .center {
+        scale: 1 !important;
+    }
+}
+
+//! ----- FOR MATH ----- !\\
+
+@media screen and (max-width: 1142px) {
+    body {
+        main {
+            .forMath {
+                .forPicture {
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 737px) {
+    body {
+        main {
+            .forMath {
+                flex-direction: column;
+
+                .forText {
+                    width: 100%;
+                    height: 300px;
+
+                    p {
+                        overflow-y: auto;
+                    }
+                }
+
+                .forPicture {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 496px) {
+    body {
+        main {
+            .forMath {
+                .forText {
+                    align-items: center;
+                    padding: 0;
+
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                .forPicture {
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
+
+//! ----- GRADUATE ----- !\\
+
+@media screen and (max-width: 1319px) {
+    body {
+        main {
+            .graduate {
+                .graduateCards {
+                    height: 940px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1202px) {
+    body {
+        main {
+            .graduate {
+                .graduateText {
+                    height: 150px;
+
+                    p {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ----- COMMENTS ----- !\\
+
+@media screen and (max-width: 1312px) {
+    body {
+        main {
+            .comments {
+                .commentsCards {
+                    height: 800px;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
+
+//! ----- SCIENCE ACADEMIC ----- !\\
+
+@media screen and (max-width: 768px) {
+    body {
+        main {
+            .scienceAcademic {
+                height: auto;
+
+                .containerScienceAcademic {
+                    flex-direction: column;
+                    height: auto;
+
+                    .pictureScienceAcademic {
+                        width: 100%;
+                        padding: 0;
+
+                        .lightBlueRectangle,
+                        .purpleRectangle,
+                        .purpleCircle,
+                        .orangeCircle {
+                            display: none;
+                        }
+
+                        .mainPicture {
+                            width: 90%;
+                        }
+                    }
+
+                    .infoScienceAcademic {
+                        width: 100%;
+                        height: 300px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 493px) {
+    body {
+        main {
+            .scienceAcademic {
+
+                .containerScienceAcademic {
+
+                    .infoScienceAcademic {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

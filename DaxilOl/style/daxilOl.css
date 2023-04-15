@@ -1,0 +1,619 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #34485a;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+body header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body header .topPartHeader {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #3ad4d8;
+}
+body header .topPartHeader .gmailAndPhoneInfo {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .topPartHeader .gmailAndPhoneInfo .phone {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  border-right: solid 1px black;
+  padding-right: 12px;
+}
+body header .topPartHeader .gmailAndPhoneInfo .email {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+}
+body header .topPartHeader .contactPart {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+body header .navbar .infoPage {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+body header .navbar .infoPage a {
+  font-size: 13px;
+  font-weight: 800;
+}
+body header .navbar .infoPage .pages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar .infoPage .pages .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #3AD4D8;
+  border-radius: 50%;
+}
+body header .navbar .infoPage .pages .red {
+  color: red;
+}
+body header .navbar .logo {
+  width: 84px;
+  height: 58px;
+}
+body header .navbar .navbarLinks {
+  max-width: 861px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .navbarLinks .links {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #181818;
+  display: inline-block;
+  position: relative;
+}
+body header .navbar .navbarLinks .links::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+body header .navbar .navbarLinks .links:hover::after {
+  width: 100%;
+  left: 0;
+}
+body header .navbar .navbarButtons {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .navbar .navbarButtons .buttonsInNavbar {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  transition: 0.6s ease-out;
+}
+body header .navbar .navbarButtons .buttonsInNavbar:hover {
+  cursor: pointer;
+  background-color: #671c7c;
+}
+body header .navbar .navbarButtons .likeButton {
+  background-image: url("../../images/Header/like.png");
+  background-repeat: no-repeat;
+  background-size: 55% 50%;
+  background-position: center;
+}
+body header .navbar .navbarButtons .likeButton:hover {
+  background-image: url("../../images/Header/likeHover.png");
+}
+body header .navbar .navbarButtons .userButton {
+  background-image: url("../../images/Header/user.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body header .navbar .navbarButtons .userButton:hover {
+  background-image: url("../../images/Header/userHover.png");
+}
+body header .navbar .navbarButtons .searchButton {
+  background-image: url("../../images/Header/search.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body header .navbar .navbarButtons .searchButton:hover {
+  background-image: url("../../images/Header/searchHover.png");
+}
+body header .navbar .navbarButtons .hMenu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+body header .navbar .navbarButtons .hMenu .line {
+  width: 35px;
+  height: 4px;
+  border: none;
+  background-color: #671c7c;
+  border-radius: 2px;
+}
+body main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .daxilOl {
+  width: 84%;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  position: relative;
+}
+body main .daxilOl .orangeCircle1 {
+  right: 0;
+  top: -35px;
+}
+body main .daxilOl .orangeCircle2 {
+  bottom: -50px;
+  left: -20px;
+}
+body main .daxilOl .purpleRectangle {
+  top: -40px;
+  right: -130px;
+  z-index: -1;
+}
+body main .daxilOl .lightBlueRectangle {
+  bottom: -115px;
+  left: -80px;
+  z-index: -1;
+}
+body main .daxilOl img {
+  position: absolute;
+}
+body main .daxilOl .left {
+  width: 50%;
+  height: 500px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+body main .daxilOl .left h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+body main .daxilOl .left input[type=text] {
+  width: 350px;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  background-color: white;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+body main .daxilOl .left .password {
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+body main .daxilOl .left .password input {
+  width: 310px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+body main .daxilOl .left .password button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+body main .daxilOl .left .password button:hover {
+  border: none;
+}
+body main .daxilOl .left .signInButton {
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #543EE9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.6s;
+}
+body main .daxilOl .left .signInButton:hover {
+  background-color: white;
+  color: #543EE9;
+  border: solid 1px #543EE9;
+}
+body main .daxilOl .left .agreement {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+body main .daxilOl .left .agreement input {
+  position: relative;
+}
+body main .daxilOl .left .agreement input::after {
+  content: " Məni yadda saxla";
+  font-size: 14px;
+  position: absolute;
+  width: 200px;
+  left: 20px;
+  top: -3px;
+}
+body main .daxilOl .left .agreement a {
+  font-size: 14px;
+}
+body main .daxilOl .left p {
+  font-size: 15px;
+  font-weight: 500;
+}
+body main .daxilOl .left .signInButton1 {
+  width: 350px;
+  height: 40px;
+  border: solid 2px #543EE9;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #543EE9;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.6s;
+  margin-top: 30px;
+}
+body main .daxilOl .left .signInButton1:hover {
+  background-color: #543EE9;
+  color: white;
+  border: solid 2px white;
+}
+body main .daxilOl .left .orangeCircle {
+  top: 80px;
+  left: 50px;
+}
+body main .daxilOl .left .lightBlueCircle {
+  right: 40px;
+  top: 40px;
+}
+body main .daxilOl .left .purpleCircle {
+  right: 0px;
+  bottom: 70px;
+}
+body main .daxilOl .left .lightPurpleCircle {
+  left: 90px;
+  bottom: 30px;
+}
+body main .daxilOl .right {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 60px 70px 80px 70px;
+  background-color: rgba(214, 167, 249, 0.1490196078);
+  position: relative;
+}
+body main .daxilOl .right h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+body main .daxilOl .right p {
+  font-size: 15px;
+  font-weight: 500;
+}
+body main .daxilOl .right #signUpButton {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 1px #543EE9;
+  background-color: white;
+  color: #543EE9;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.6s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+body main .daxilOl .right #signUpButton:hover {
+  color: white;
+  background-color: #543EE9;
+  border: none;
+}
+body main .daxilOl .right .orangeCircle {
+  left: 60px;
+  top: 25px;
+}
+body main .daxilOl .right .lightPurpleCircle {
+  right: 60px;
+  top: 70px;
+}
+body main .daxilOl .right .lightBlueCircle {
+  bottom: 70px;
+  right: 10px;
+}
+body main .daxilOl .right .purpleCircle {
+  left: 180px;
+  bottom: 10px;
+}
+body main .daxilOl .right input[type=text] {
+  width: 350px;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  background-color: white;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+body main .daxilOl .right .password1 {
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+body main .daxilOl .right .password1 input {
+  width: 310px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+body main .daxilOl .right .password1 button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+body main .daxilOl .right .password1 button:hover {
+  border: none;
+}
+body main .daxilOl .right .password2 {
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+body main .daxilOl .right .password2 input {
+  width: 310px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+body main .daxilOl .right .password2 button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+body main .daxilOl .right .password2 button:hover {
+  border: none;
+}
+body main .daxilOl .right .signUpButton1 {
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #543EE9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.6s;
+}
+body main .daxilOl .right .signUpButton1:hover {
+  background-color: white;
+  color: #543EE9;
+  border: solid 1px #543EE9;
+}
+body footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #671C7C;
+  margin-top: 100px;
+}
+body footer a,
+body footer p {
+  color: white;
+}
+body footer .footerTop {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body footer .footerTop .part1 {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body footer .footerTop .part2 {
+  width: 20%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .footerTop .part2 img {
+  width: 107px;
+  height: 79px;
+}
+body footer .footerTop .part3 {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+body footer .footerTop .part3 button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #3ad4d8;
+  border-radius: 20px;
+  color: #671C7C;
+  font-weight: 700;
+  transition: 0.6s;
+  cursor: pointer;
+}
+body footer .footerTop .part3 button:hover {
+  background-color: #543ee9;
+  color: white;
+}
+body footer .footerTop .part4 {
+  width: 30%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part5 {
+  width: 20%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part6 {
+  width: 20%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part7 {
+  width: 30%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerBottom {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body footer .footerBottom .lastWord::after {
+  content: " JedAi";
+}/*# sourceMappingURL=daxilOl.css.map */

@@ -1,0 +1,286 @@
+@media screen and (max-width: 565px) {
+  body {
+    header {
+      .topPartHeader {
+        width: 100%;
+        padding: 0;
+
+        .gmailAndPhoneInfo {
+          width: 340px;
+        }
+
+        .contactPart {
+          a {
+            width: 27px;
+            height: 30px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .navbar {
+        .navbarLinks {
+          .links {
+            height: 50px;
+          }
+        }
+      }
+
+      .middleHeader {
+        .topMiddleHeader {
+          .pictureTopMiddleHeader {
+            .mainPicture {
+              width: 320px;
+              height: 205px;
+
+              .circleOfPause {
+                width: 50px;
+                height: 50px;
+
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+
+            .purpleRectangle {
+              width: 350px;
+              left: 170px;
+              top: 60px;
+            }
+
+            .lightBlueRectangle {
+              width: 260px;
+              height: 310px;
+              bottom: 150px;
+              left: 50px;
+            }
+
+            .lightBlueCircle {
+              left: 130px;
+              bottom: 90px;
+            }
+
+            .purpleCircle {
+              left: 120px;
+              top: 50px;
+            }
+
+            .orangeCircle {
+              top: 50px;
+              right: 70px;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .info {
+        .infoText {
+          height: 300px;
+
+          p {
+            width: 90%;
+          }
+        }
+
+        .infoPicture {
+          .girlPicture {
+            width: 400px;
+          }
+
+          .purpleSquare {
+            right: 0;
+            top: 10px;
+          }
+
+          .purpleCircle {
+            top: 40px;
+            left: 150px;
+          }
+
+          .lightBlueSquare {
+            bottom: -5px;
+            left: 80px;
+          }
+
+          .orangeCircle {
+            left: 160px;
+            bottom: 25px;
+          }
+        }
+      }
+
+      .popularCourse {
+        .textArea {
+          gap: 5px;
+
+          p {
+            width: 95%;
+          }
+
+          .purpleCircle {
+            right: 0px;
+            top: 0;
+          }
+        }
+
+        .cardsInPopularCourse {
+          height: 1700px;
+        }
+      }
+
+      .aboutNaila {
+        height: 710px;
+
+        .containerAboutNaila {
+          flex-direction: column;
+          height: 710px;
+
+          .textForContainerAboutNaila {
+            width: 100%;
+            align-items: center;
+            height: 306px;
+
+            .blueWordAboutNaila {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .onlineLesson {
+        .cardsOnlineLesson {
+          height: 800px;
+          flex-direction: column;
+        }
+      }
+
+      .onlineExams {
+        .textOnlineExams {
+          gap: 10px;
+          justify-content: center;
+
+          p {
+            width: 90%;
+          }
+        }
+      }
+
+      .scienceAcademic {
+        .containerScienceAcademic {
+          .infoScienceAcademic {
+            justify-content: center;
+            gap: 10px;
+          }
+        }
+      }
+
+      .comments {
+        .commentsCards {
+          height: 1650px;
+        }
+      }
+
+      .graduate {
+        .graduateText {
+          p {
+            width: 95%;
+          }
+        }
+
+        .graduateCards {
+          height: 2000px;
+        }
+      }
+
+      .forMath {
+        .forText {
+          height: 300px;
+        }
+      }
+
+      .certificate {
+        .forText {
+          height: 160px;
+
+          p {
+            width: 95%;
+          }
+        }
+      }
+
+      .news {
+        .newsCards {
+          height: 1800px;
+        }
+      }
+    }
+
+    footer {
+      height: 500px;
+      justify-content: space-around;
+      padding: 0;
+
+      .footerTop {
+        flex-direction: column;
+
+        .part1 {
+          width: 100%;
+          height: 110px;
+        }
+
+        .part2 {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          padding: 0;
+          gap: 10;
+          justify-content: center;
+        }
+
+        .part3 {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          padding: 0;
+          gap: 10;
+          justify-content: center;
+        }
+
+        .part4 {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          padding: 0;
+          gap: 10;
+          justify-content: center;
+        }
+
+        .part5 {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          padding: 0;
+          gap: 10;
+          justify-content: center;
+        }
+
+        .part6 {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          padding: 0;
+          gap: 10;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

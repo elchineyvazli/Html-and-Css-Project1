@@ -1,0 +1,381 @@
+@media screen and (max-width: 1059px) {
+  body footer {
+    height: 700px;
+  }
+  body footer .footerTop {
+    flex-wrap: wrap;
+  }
+  body footer .footerTop .part1,
+  body footer .footerTop .part2,
+  body footer .footerTop .part3,
+  body footer .footerTop .part4,
+  body footer .footerTop .part5,
+  body footer .footerTop .part6 {
+    height: 200px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body footer .footerTop .part1 {
+    width: 50%;
+  }
+  body footer .footerTop .part2 {
+    width: 50%;
+  }
+  body footer .footerTop .part3 {
+    width: 30%;
+    flex-direction: column;
+  }
+  body footer .footerTop .part4 {
+    width: 70%;
+  }
+  body footer .footerTop .part5 {
+    width: 40%;
+    flex-direction: column;
+  }
+  body footer .footerTop .part6 {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 643px) {
+  body footer .footerTop .part2 {
+    flex-direction: column;
+  }
+  body footer .footerTop .part4 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 499px) {
+  body footer .footerTop .part1 img {
+    width: 80%;
+  }
+  body footer .footerTop .part5 {
+    display: none;
+  }
+  body footer .footerTop .part6 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1261px) {
+  body main .news {
+    height: 1100px;
+  }
+  body main .news .newsText p {
+    width: 90%;
+  }
+  body main .news .newsCards {
+    height: 900px;
+    gap: 22px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 985px) {
+  body main .aboutNaila .containerAboutNaila {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 832px) {
+  body main .aboutNaila {
+    height: auto;
+  }
+  body main .aboutNaila .containerAboutNaila {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila {
+    width: 100%;
+    padding: 20px;
+    height: 350px;
+  }
+  body main .aboutNaila .containerAboutNaila img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 851px) {
+  body main .onlineLesson .textOnlineLesson p {
+    width: 90%;
+  }
+  body main .onlineLesson .cardsOnlineLesson {
+    flex-direction: column;
+    height: 1000px;
+    padding: 0;
+  }
+  body main .onlineExams .textOnlineExams p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 475px) {
+  body main .onlineLesson .textOnlineLesson {
+    height: 200px;
+  }
+  body main .onlineLesson .textOnlineLesson h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 456px) {
+  body main .onlineLesson .cardsOnlineLesson .cardOnlineLesson,
+  body main .onlineLesson .cardsOnlineLesson .cardsOnlineLesson2,
+  body main .onlineLesson .cardsOnlineLesson .cardsOnlineLesson3 {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 1254px) {
+  body main .popularCourse .textArea {
+    height: 150px;
+  }
+  body main .popularCourse .textArea p {
+    width: 90%;
+  }
+  body main .popularCourse .textArea img {
+    display: none;
+  }
+  body main .popularCourse .cardsInPopularCourse {
+    flex-wrap: wrap;
+    height: 850px;
+    justify-content: center;
+    gap: 20px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 1088px) {
+  body main .info .girlPicture {
+    width: 90%;
+  }
+  body main .info .purpleSquare {
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+  body main .info .lightBlueSquare {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  body main .info {
+    flex-direction: column;
+  }
+  body main .info .infoPicture {
+    width: 100%;
+  }
+  body main .info .lightBlueSquare {
+    display: none;
+  }
+  body main .info .infoText {
+    width: 100%;
+    align-items: center;
+  }
+  body main .info .infoText h1 {
+    font-weight: 1000;
+  }
+}
+@media screen and (max-width: 1322px) {
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleRectangle {
+    display: none;
+  }
+}
+@media screen and (max-width: 964px) {
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .mainPicture {
+    width: 90%;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .orangeCircle {
+    display: none;
+  }
+}
+@media screen and (max-width: 829px) {
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueRectangle {
+    display: none;
+  }
+}
+@media screen and (max-width: 786px) {
+  body header .middleHeader {
+    height: auto;
+  }
+  body header .middleHeader .topMiddleHeader {
+    flex-direction: column;
+  }
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    gap: 10px;
+  }
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .infoTextOfHeader {
+    font-size: 32px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader {
+    width: 100%;
+    height: 350px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleCircle {
+    display: none;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueCircle {
+    display: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 842px) {
+  body header .navbar .navbarButtons {
+    width: 240px;
+  }
+  body header .navbar .navbarButtons .hMenu {
+    display: flex;
+  }
+  body header .navbar .navbarLinks.active {
+    transform: translateX(0);
+  }
+  body header .navbar .navbarLinks {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 126px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+  }
+  body header .navbar .navbarLinks .links {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+  }
+  body header .navbar .navbarLinks .anotherLinks {
+    background-color: #e0e0e0;
+  }
+}
+@media screen and (max-width: 586px) {
+  body header .topPartHeader {
+    padding: 0 10px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo {
+    width: 260px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo .phone {
+    font-size: 13px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo .email {
+    font-size: 13px;
+  }
+  body header .topPartHeader .contactPart {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 647px) {
+  body main .certificate .forText p {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 849px) {
+  body main .books .forText {
+    height: 180px;
+  }
+  body main .books .forText p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 730px) {
+  body main .books .forCarousel .owl-books .item {
+    width: 200px;
+  }
+  .center {
+    scale: 1 !important;
+  }
+}
+@media screen and (max-width: 1142px) {
+  body main .forMath .forPicture img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 737px) {
+  body main .forMath {
+    flex-direction: column;
+  }
+  body main .forMath .forText {
+    width: 100%;
+    height: 300px;
+  }
+  body main .forMath .forText p {
+    overflow-y: auto;
+  }
+  body main .forMath .forPicture {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 496px) {
+  body main .forMath .forText {
+    align-items: center;
+    padding: 0;
+  }
+  body main .forMath .forText h1 {
+    text-align: center;
+  }
+  body main .forMath .forPicture {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 1319px) {
+  body main .graduate .graduateCards {
+    height: 940px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 1202px) {
+  body main .graduate .graduateText {
+    height: 150px;
+  }
+  body main .graduate .graduateText p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1312px) {
+  body main .comments .commentsCards {
+    height: 800px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .scienceAcademic {
+    height: auto;
+  }
+  body main .scienceAcademic .containerScienceAcademic {
+    flex-direction: column;
+    height: auto;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic {
+    width: 100%;
+    padding: 0;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .lightBlueRectangle,
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .purpleRectangle,
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .purpleCircle,
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .orangeCircle {
+    display: none;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .mainPicture {
+    width: 90%;
+  }
+  body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 493px) {
+  body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic {
+    height: 400px;
+  }
+}/*# sourceMappingURL=mediaQuery.css.map */

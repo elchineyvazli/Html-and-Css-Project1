@@ -1,0 +1,360 @@
+@media screen and (max-width: 768px) {
+  body {
+    header {
+      .navbar {
+        justify-content: space-between;
+        padding: 0 30px;
+
+        .logo {
+          width: 110px;
+          height: 76px;
+        }
+
+        .navbarLinks.active {
+          transform: translateX(0);
+        }
+
+        .navbarLinks {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          background-color: white;
+          align-items: flex-start;
+          position: fixed;
+          left: 0;
+          top: 126px;
+          z-index: 5;
+          transform: translateX(100%);
+          transition: 0.5s all ease-in-out;
+
+          .links {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            background-color: #fbfbfb;
+            padding-left: 20px;
+          }
+
+          .anotherLinks {
+            background-color: #e0e0e0;
+          }
+        }
+
+        .navbarButtons {
+
+          .hMenu {
+            display: flex;
+          }
+        }
+      }
+
+      .middleHeader {
+        height: 900px;
+
+        .topMiddleHeader {
+          flex-direction: column;
+
+          .infoTopMiddleHeader {
+            width: 100%;
+            height: 345px;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+
+            .infoTextOfHeader {
+              text-align: center;
+              width: 100%;
+            }
+
+            .textInHeader {
+              text-align: center;
+            }
+          }
+
+          .pictureTopMiddleHeader {
+            width: 100%;
+            height: 500px;
+
+            .purpleRectangle {
+              left: 270px;
+            }
+
+            .lightBlueRectangle {
+              bottom: 120px;
+              left: 50px;
+            }
+
+            .lightBlueCircle {
+              left: 240px;
+              bottom: 50px;
+            }
+
+            .purpleCircle {
+              left: 170px;
+            }
+
+            .orangeCircle {
+              top: -10px;
+              right: 110px;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .info {
+        flex-direction: column-reverse;
+
+        .infoText {
+          width: 100%;
+          height: 250px;
+          align-items: center;
+
+          h1 {
+            text-align: center;
+          }
+        }
+
+        .infoPicture {
+          width: 100%;
+
+          .purpleSquare {
+            right: 60px;
+          }
+
+          .lightBlueSquare {
+            bottom: -70px;
+            left: 110px;
+          }
+
+          .purpleCircle {
+            left: 210px;
+          }
+
+          .orangeCircle {
+            bottom: -30px;
+            left: 180px;
+          }
+        }
+      }
+
+      .popularCourse {
+        margin-top: 50px;
+
+        .textArea {
+          p {
+            width: 80%;
+          }
+
+          .purpleCircle {
+            right: 100px;
+            top: 5px;
+          }
+        }
+
+        .cardsInPopularCourse {
+          flex-wrap: wrap;
+          height: 850px;
+          gap: 10px;
+        }
+
+        .buttonPartForPopularCourse {
+          .purpleCircleInButtonPart {
+            left: 100px;
+            top: 10px;
+          }
+        }
+      }
+
+      .aboutNaila {
+        .containerAboutNaila {
+          width: 100%;
+
+          .textForContainerAboutNaila {
+            gap: 5px;
+            padding-left: 10px;
+
+            .blueWordAboutNaila {
+              height: 35px;
+            }
+          }
+        }
+      }
+
+      .onlineLesson {
+        .textOnlineLesson {
+          p {
+            width: 80%;
+          }
+        }
+
+        .cardsOnlineLesson {
+          padding: 0;
+          justify-content: space-around;
+
+          .cardOnlineLesson {
+            width: 240px;
+            height: 227px;
+            gap: 5px;
+          }
+        }
+      }
+
+      .scienceAcademic {
+        height: auto;
+
+        .containerScienceAcademic {
+          width: 100%;
+          height: auto;
+          flex-direction: column-reverse;
+
+          .infoScienceAcademic {
+            width: 100%;
+            height: 260px;
+            align-items: center;
+
+            p {
+              text-align: center;
+            }
+          }
+
+          .pictureScienceAcademic {
+            width: 100%;
+            height: 600px;
+
+            .lightBlueRectangle {
+              left: 40px;
+              top: 10px;
+            }
+
+            .purpleRectangle {
+              right: 40px;
+              bottom: 20px;
+            }
+
+            .purpleCircle {
+              left: 130px;
+              top: 50px;
+            }
+
+            .orangeCircle {
+              right: 270px;
+              bottom: 0px;
+            }
+          }
+        }
+      }
+
+      .comments {
+        .commentsCards {
+          height: 820px;
+          flex-wrap: wrap;
+        }
+      }
+
+      .graduate {
+        .graduateText {
+          gap: 10px;
+
+          p {
+            width: 80%;
+          }
+        }
+
+        .graduateCards {
+          height: 1050px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+
+      .forMath {
+        flex-direction: column;
+
+        .forText {
+          width: 100%;
+          height: 200px;
+          align-items: center;
+          padding: 0;
+
+          p {
+            width: 90%;
+          }
+        }
+
+        .forPicture {
+          width: 100%;
+          height: 350px;
+        }
+      }
+
+      .certificate {
+        .forText {
+          gap: 10px;
+        }
+      }
+
+      .books {
+        .forText {
+          gap: 10px;
+          height: 140px;
+          justify-content: center;
+
+          p {
+            width: 90%;
+          }
+        }
+
+      }
+
+      .news {
+        height: auto;
+
+        .newsText {
+          gap: 10px;
+
+          p {
+            width: 90%;
+          }
+        }
+
+        .newsCards {
+          flex-wrap: wrap;
+          height: 900px;
+          gap: 20px;
+        }
+      }
+    }
+
+    footer {
+      .footerTop {
+        .part1 {
+          width: 22%;
+
+          img {
+            width: 140px;
+            height: 100px;
+          }
+        }
+
+        .part4 {
+          width: 14%;
+
+          a {
+            text-align: center;
+          }
+        }
+
+        .part5 {
+          width: 25%;
+        }
+
+        .part6 {
+          width: 7%;
+        }
+      }
+    }
+  }
+}

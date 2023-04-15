@@ -1,0 +1,196 @@
+@media screen and (max-width: 565px) {
+  body header .topPartHeader {
+    width: 100%;
+    padding: 0;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo {
+    width: 340px;
+  }
+  body header .topPartHeader .contactPart a {
+    width: 27px;
+    height: 30px;
+  }
+  body header .topPartHeader .contactPart a img {
+    width: 100%;
+    height: 100%;
+  }
+  body header .navbar .navbarLinks .links {
+    height: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .mainPicture {
+    width: 320px;
+    height: 205px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .mainPicture .circleOfPause {
+    width: 50px;
+    height: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .mainPicture .circleOfPause img {
+    width: 30px;
+    height: 30px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleRectangle {
+    width: 350px;
+    left: 170px;
+    top: 60px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueRectangle {
+    width: 260px;
+    height: 310px;
+    bottom: 150px;
+    left: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueCircle {
+    left: 130px;
+    bottom: 90px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleCircle {
+    left: 120px;
+    top: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .orangeCircle {
+    top: 50px;
+    right: 70px;
+  }
+  body main .info .infoText {
+    height: 300px;
+  }
+  body main .info .infoText p {
+    width: 90%;
+  }
+  body main .info .infoPicture .girlPicture {
+    width: 400px;
+  }
+  body main .info .infoPicture .purpleSquare {
+    right: 0;
+    top: 10px;
+  }
+  body main .info .infoPicture .purpleCircle {
+    top: 40px;
+    left: 150px;
+  }
+  body main .info .infoPicture .lightBlueSquare {
+    bottom: -5px;
+    left: 80px;
+  }
+  body main .info .infoPicture .orangeCircle {
+    left: 160px;
+    bottom: 25px;
+  }
+  body main .popularCourse .textArea {
+    gap: 5px;
+  }
+  body main .popularCourse .textArea p {
+    width: 95%;
+  }
+  body main .popularCourse .textArea .purpleCircle {
+    right: 0px;
+    top: 0;
+  }
+  body main .popularCourse .cardsInPopularCourse {
+    height: 1700px;
+  }
+  body main .aboutNaila {
+    height: 710px;
+  }
+  body main .aboutNaila .containerAboutNaila {
+    flex-direction: column;
+    height: 710px;
+  }
+  body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila {
+    width: 100%;
+    align-items: center;
+    height: 306px;
+  }
+  body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .blueWordAboutNaila {
+    text-align: center;
+  }
+  body main .onlineLesson .cardsOnlineLesson {
+    height: 800px;
+    flex-direction: column;
+  }
+  body main .onlineExams .textOnlineExams {
+    gap: 10px;
+    justify-content: center;
+  }
+  body main .onlineExams .textOnlineExams p {
+    width: 90%;
+  }
+  body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic {
+    justify-content: center;
+    gap: 10px;
+  }
+  body main .comments .commentsCards {
+    height: 1650px;
+  }
+  body main .graduate .graduateText p {
+    width: 95%;
+  }
+  body main .graduate .graduateCards {
+    height: 2000px;
+  }
+  body main .forMath .forText {
+    height: 300px;
+  }
+  body main .certificate .forText {
+    height: 160px;
+  }
+  body main .certificate .forText p {
+    width: 95%;
+  }
+  body main .news .newsCards {
+    height: 1800px;
+  }
+  body footer {
+    height: 500px;
+    justify-content: space-around;
+    padding: 0;
+  }
+  body footer .footerTop {
+    flex-direction: column;
+  }
+  body footer .footerTop .part1 {
+    width: 100%;
+    height: 110px;
+  }
+  body footer .footerTop .part2 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    padding: 0;
+    gap: 10;
+    justify-content: center;
+  }
+  body footer .footerTop .part3 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    padding: 0;
+    gap: 10;
+    justify-content: center;
+  }
+  body footer .footerTop .part4 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    padding: 0;
+    gap: 10;
+    justify-content: center;
+  }
+  body footer .footerTop .part5 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    padding: 0;
+    gap: 10;
+    justify-content: center;
+  }
+  body footer .footerTop .part6 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    padding: 0;
+    gap: 10;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=media565px.css.map */

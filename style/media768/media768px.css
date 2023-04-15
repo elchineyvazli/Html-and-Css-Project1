@@ -1,0 +1,262 @@
+@media screen and (max-width: 768px) {
+  body header .navbar {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  body header .navbar .logo {
+    width: 110px;
+    height: 76px;
+  }
+  body header .navbar .navbarLinks.active {
+    transform: translateX(0);
+  }
+  body header .navbar .navbarLinks {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 126px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+  }
+  body header .navbar .navbarLinks .links {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+  }
+  body header .navbar .navbarLinks .anotherLinks {
+    background-color: #e0e0e0;
+  }
+  body header .navbar .navbarButtons .hMenu {
+    display: flex;
+  }
+  body header .middleHeader {
+    height: 900px;
+  }
+  body header .middleHeader .topMiddleHeader {
+    flex-direction: column;
+  }
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader {
+    width: 100%;
+    height: 345px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .infoTextOfHeader {
+    text-align: center;
+    width: 100%;
+  }
+  body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .textInHeader {
+    text-align: center;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader {
+    width: 100%;
+    height: 500px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleRectangle {
+    left: 270px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueRectangle {
+    bottom: 120px;
+    left: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueCircle {
+    left: 240px;
+    bottom: 50px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleCircle {
+    left: 170px;
+  }
+  body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .orangeCircle {
+    top: -10px;
+    right: 110px;
+  }
+  body main .info {
+    flex-direction: column-reverse;
+  }
+  body main .info .infoText {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+  }
+  body main .info .infoText h1 {
+    text-align: center;
+  }
+  body main .info .infoPicture {
+    width: 100%;
+  }
+  body main .info .infoPicture .purpleSquare {
+    right: 60px;
+  }
+  body main .info .infoPicture .lightBlueSquare {
+    bottom: -70px;
+    left: 110px;
+  }
+  body main .info .infoPicture .purpleCircle {
+    left: 210px;
+  }
+  body main .info .infoPicture .orangeCircle {
+    bottom: -30px;
+    left: 180px;
+  }
+  body main .popularCourse {
+    margin-top: 50px;
+  }
+  body main .popularCourse .textArea p {
+    width: 80%;
+  }
+  body main .popularCourse .textArea .purpleCircle {
+    right: 100px;
+    top: 5px;
+  }
+  body main .popularCourse .cardsInPopularCourse {
+    flex-wrap: wrap;
+    height: 850px;
+    gap: 10px;
+  }
+  body main .popularCourse .buttonPartForPopularCourse .purpleCircleInButtonPart {
+    left: 100px;
+    top: 10px;
+  }
+  body main .aboutNaila .containerAboutNaila {
+    width: 100%;
+  }
+  body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila {
+    gap: 5px;
+    padding-left: 10px;
+  }
+  body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .blueWordAboutNaila {
+    height: 35px;
+  }
+  body main .onlineLesson .textOnlineLesson p {
+    width: 80%;
+  }
+  body main .onlineLesson .cardsOnlineLesson {
+    padding: 0;
+    justify-content: space-around;
+  }
+  body main .onlineLesson .cardsOnlineLesson .cardOnlineLesson {
+    width: 240px;
+    height: 227px;
+    gap: 5px;
+  }
+  body main .scienceAcademic {
+    height: auto;
+  }
+  body main .scienceAcademic .containerScienceAcademic {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic {
+    width: 100%;
+    height: 260px;
+    align-items: center;
+  }
+  body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic p {
+    text-align: center;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic {
+    width: 100%;
+    height: 600px;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .lightBlueRectangle {
+    left: 40px;
+    top: 10px;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .purpleRectangle {
+    right: 40px;
+    bottom: 20px;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .purpleCircle {
+    left: 130px;
+    top: 50px;
+  }
+  body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic .orangeCircle {
+    right: 270px;
+    bottom: 0px;
+  }
+  body main .comments .commentsCards {
+    height: 820px;
+    flex-wrap: wrap;
+  }
+  body main .graduate .graduateText {
+    gap: 10px;
+  }
+  body main .graduate .graduateText p {
+    width: 80%;
+  }
+  body main .graduate .graduateCards {
+    height: 1050px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  body main .forMath {
+    flex-direction: column;
+  }
+  body main .forMath .forText {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    padding: 0;
+  }
+  body main .forMath .forText p {
+    width: 90%;
+  }
+  body main .forMath .forPicture {
+    width: 100%;
+    height: 350px;
+  }
+  body main .certificate .forText {
+    gap: 10px;
+  }
+  body main .books .forText {
+    gap: 10px;
+    height: 140px;
+    justify-content: center;
+  }
+  body main .books .forText p {
+    width: 90%;
+  }
+  body main .news {
+    height: auto;
+  }
+  body main .news .newsText {
+    gap: 10px;
+  }
+  body main .news .newsText p {
+    width: 90%;
+  }
+  body main .news .newsCards {
+    flex-wrap: wrap;
+    height: 900px;
+    gap: 20px;
+  }
+  body footer .footerTop .part1 {
+    width: 22%;
+  }
+  body footer .footerTop .part1 img {
+    width: 140px;
+    height: 100px;
+  }
+  body footer .footerTop .part4 {
+    width: 14%;
+  }
+  body footer .footerTop .part4 a {
+    text-align: center;
+  }
+  body footer .footerTop .part5 {
+    width: 25%;
+  }
+  body footer .footerTop .part6 {
+    width: 7%;
+  }
+}/*# sourceMappingURL=media768px.css.map */

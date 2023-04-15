@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/imtahanlar.css">
+    <link rel="stylesheet" href="./mediaQuery/mediaQuery.css">
+</head>
+
+<body>
+    <header>
+        <div class="topPartHeader">
+            <div class="gmailAndPhoneInfo">
+                <a href="#" class="phone">+994 55 349 60 60</a>
+                <a href="#" class="email">info@rbacademy.az</a>
+            </div>
+            <div class="contactPart">
+                <a href="https://www.instagram.com/lordmaxel/"><svg width="24" height="30" viewBox="0 0 14 14"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.0413 0.0412569C4.77454 0.00750124 5.00833 0 6.87614 0C8.74395 0 8.97774 0.00812634 9.71037 0.0412569C10.443 0.0743874 10.9431 0.191282 11.3806 0.360685C11.8388 0.533839 12.2545 0.804509 12.5983 1.15457C12.9484 1.49775 13.2184 1.91282 13.391 2.37164C13.561 2.80922 13.6773 3.3093 13.711 4.04067C13.7448 4.77517 13.7523 5.00896 13.7523 6.87614C13.7523 8.74395 13.7442 8.97774 13.711 9.71099C13.6779 10.4424 13.561 10.9424 13.391 11.38C13.2184 11.8389 12.948 12.2547 12.5983 12.5983C12.2545 12.9484 11.8388 13.2184 11.3806 13.391C10.9431 13.561 10.443 13.6773 9.71162 13.711C8.97774 13.7448 8.74395 13.7523 6.87614 13.7523C5.00833 13.7523 4.77454 13.7442 4.0413 13.711C3.30993 13.6779 2.80984 13.561 2.37227 13.391C1.91339 13.2184 1.49764 12.9479 1.15394 12.5983C0.804121 12.255 0.53341 11.8394 0.360685 11.3806C0.191282 10.9431 0.0750125 10.443 0.0412569 9.71162C0.00750124 8.97712 0 8.74333 0 6.87614C0 5.00833 0.00812634 4.77454 0.0412569 4.04192C0.0743874 3.3093 0.191282 2.80922 0.360685 2.37164C0.533666 1.91287 0.804583 1.49732 1.15457 1.15394C1.49777 0.804197 1.91311 0.533491 2.37164 0.360685C2.80922 0.191282 3.3093 0.0750125 4.04067 0.0412569H4.0413ZM9.65473 1.27896C8.92961 1.24583 8.71207 1.23896 6.87614 1.23896C5.04021 1.23896 4.82268 1.24583 4.09756 1.27896C3.42682 1.30959 3.06301 1.42149 2.82047 1.51588C2.49979 1.6409 2.27038 1.78905 2.02971 2.02971C1.80158 2.25166 1.62601 2.52185 1.51588 2.82047C1.42149 3.06301 1.30959 3.42682 1.27896 4.09756C1.24583 4.82268 1.23896 5.04021 1.23896 6.87614C1.23896 8.71207 1.24583 8.92961 1.27896 9.65473C1.30959 10.3255 1.42149 10.6893 1.51588 10.9318C1.6259 11.23 1.80155 11.5007 2.02971 11.7226C2.25162 11.9507 2.52229 12.1264 2.82047 12.2364C3.06301 12.3308 3.42682 12.4427 4.09756 12.4733C4.82268 12.5065 5.03959 12.5133 6.87614 12.5133C8.7127 12.5133 8.92961 12.5065 9.65473 12.4733C10.3255 12.4427 10.6893 12.3308 10.9318 12.2364C11.2525 12.1114 11.4819 11.9632 11.7226 11.7226C11.9507 11.5007 12.1264 11.23 12.2364 10.9318C12.3308 10.6893 12.4427 10.3255 12.4733 9.65473C12.5065 8.92961 12.5133 8.71207 12.5133 6.87614C12.5133 5.04021 12.5065 4.82268 12.4733 4.09756C12.4427 3.42682 12.3308 3.06301 12.2364 2.82047C12.1114 2.49979 11.9632 2.27038 11.7226 2.02971C11.5006 1.80159 11.2304 1.62603 10.9318 1.51588C10.6893 1.42149 10.3255 1.30959 9.65473 1.27896ZM5.99787 8.99587C6.48837 9.20005 7.03453 9.22761 7.54309 9.07384C8.05164 8.92006 8.49103 8.5945 8.78622 8.15276C9.0814 7.71101 9.21407 7.18049 9.16155 6.6518C9.10904 6.12311 8.8746 5.62904 8.49829 5.254C8.2584 5.01426 7.96833 4.83069 7.64898 4.7165C7.32963 4.60232 6.98893 4.56036 6.65142 4.59365C6.3139 4.62694 5.98797 4.73465 5.69708 4.90902C5.40618 5.0834 5.15757 5.3201 4.96914 5.60209C4.78071 5.88408 4.65714 6.20434 4.60734 6.53981C4.55754 6.87529 4.58273 7.21763 4.68112 7.5422C4.7795 7.86677 4.94862 8.16549 5.17631 8.41685C5.404 8.66821 5.68459 8.86596 5.99787 8.99587ZM4.37698 4.37698C4.70517 4.04878 5.0948 3.78844 5.52361 3.61083C5.95241 3.43321 6.41201 3.34179 6.87614 3.34179C7.34028 3.34179 7.79988 3.43321 8.22868 3.61083C8.65749 3.78844 9.04712 4.04878 9.37531 4.37698C9.70351 4.70517 9.96384 5.0948 10.1415 5.52361C10.3191 5.95241 10.4105 6.41201 10.4105 6.87614C10.4105 7.34028 10.3191 7.79988 10.1415 8.22868C9.96384 8.65749 9.70351 9.04712 9.37531 9.37531C8.71249 10.0381 7.81351 10.4105 6.87614 10.4105C5.93878 10.4105 5.0398 10.0381 4.37698 9.37531C3.71416 8.71249 3.34179 7.81351 3.34179 6.87614C3.34179 5.93878 3.71416 5.0398 4.37698 4.37698ZM11.1944 3.86814C11.2757 3.79142 11.3408 3.69917 11.3858 3.59683C11.4309 3.4945 11.4549 3.38417 11.4565 3.27238C11.4582 3.16058 11.4374 3.0496 11.3953 2.946C11.3533 2.84239 11.2909 2.74828 11.2118 2.66922C11.1328 2.59016 11.0387 2.52777 10.9351 2.48574C10.8315 2.44371 10.7205 2.42289 10.6087 2.42452C10.4969 2.42615 10.3866 2.45019 10.2842 2.49523C10.1819 2.54026 10.0896 2.60537 10.0129 2.6867C9.86371 2.84487 9.78202 3.05496 9.78519 3.27238C9.78836 3.48979 9.87614 3.69741 10.0299 3.85117C10.1836 4.00492 10.3913 4.0927 10.6087 4.09587C10.8261 4.09904 11.0362 4.01735 11.1944 3.86814Z"
+                            fill="#34485A" />
+                    </svg></a>
+                <a href="#"><svg width="22" height="22" viewBox="0 0 7 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.51326 12H4.03958V6.94105H6.31579L6.56589 4.42737H4.03958V3.15789C4.03958 2.99039 4.10612 2.82975 4.22456 2.7113C4.34301 2.59286 4.50365 2.52632 4.67116 2.52632H6.56589V0H4.67116C3.83363 0 3.03041 0.332706 2.43819 0.924926C1.84597 1.51715 1.51326 2.32037 1.51326 3.15789V4.42737H0.250105L0 6.94105H1.51326V12Z"
+                            fill="#34485A" />
+                    </svg>
+                </a>
+                <a href="#"><svg width="24" height="30" viewBox="0 0 16 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 1.42342C15.4116 1.66396 14.7795 1.82649 14.115 1.89995C14.8007 1.52145 15.3136 0.925741 15.5582 0.223974C14.914 0.576974 14.209 0.825448 13.4738 0.958593C12.9794 0.471576 12.3245 0.148773 11.6109 0.0403016C10.8973 -0.06817 10.1648 0.0437586 9.52717 0.35871C8.88955 0.673661 8.38247 1.17401 8.08467 1.78209C7.78686 2.39016 7.71499 3.07193 7.88021 3.72154C6.57496 3.66108 5.29807 3.34809 4.13242 2.80288C2.96677 2.25767 1.93841 1.49244 1.11407 0.556828C0.832203 1.0054 0.670131 1.52549 0.670131 2.07938C0.669817 2.578 0.802912 3.069 1.05761 3.50879C1.3123 3.94858 1.68073 4.32357 2.13019 4.60049C1.60893 4.58519 1.09918 4.45524 0.643354 4.22148V4.26048C0.643302 4.95983 0.905511 5.63765 1.38549 6.17894C1.86547 6.72023 2.53365 7.09165 3.27667 7.23017C2.79312 7.3509 2.28615 7.36869 1.79406 7.28218C2.0037 7.88392 2.41205 8.41013 2.96194 8.78712C3.51184 9.16412 4.17575 9.37303 4.86074 9.38462C3.69794 10.2268 2.26188 10.6836 0.783581 10.6816C0.521717 10.6816 0.260073 10.6675 0 10.6393C1.50056 11.5294 3.24731 12.0018 5.03127 12C11.0702 12 14.3715 7.38554 14.3715 3.38349C14.3715 3.25347 14.368 3.12215 14.3617 2.99213C15.0038 2.56369 15.5581 2.03315 15.9986 1.42537L16 1.42342Z"
+                            fill="#34485A" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="infoPage">
+                <a href="../index.html"><img src="../images/Header/logo.png" alt="Logo yoxdur" class="logo" /></a>
+                <div class="pages">
+                    <a href="../index.html">ana səhifə</a>
+                    <div class="dot"></div>
+                    <a href="./kurslar.html" class="red">imtahanlar</a>
+                </div>
+            </div>
+            <div class="navbarLinks" id="navbarLinks">
+                <a href="../Haqqimizda/aboutUs.html" class="links anotherLinks">Haqqımızda</a>
+                <a href="../Kurslar/kurslar.html" class="links">Kurslar</a>
+                <a href="./imtahanlar.html" class="links anotherLinks">İmtahanlar</a>
+                <a href="../Muellimler/muellimler.html" class="links">Müəllimlər</a>
+                <a href="../Mezunlarimiz/mezunlarimiz.html" class="links anotherLinks">Məzunlar</a>
+                <a href="../Kitablar/kitablar.html" class="links">Kitablar</a>
+                <a href="../Sertifikatlar/sertifikatlar.html" class="links anotherLinks">Sertifkatlar</a>
+                <a href="../Xeber/xeber.html" class="links">Xəbərlər</a>
+                <a href="../Elaqe/elaqe.html" class="links anotherLinks">Əlaqə</a>
+            </div>
+            <div class="navbarButtons">
+                <button class="buttonsInNavbar likeButton"></button>
+                <a href="../DaxilOl/daxilOl.html" class="buttonsInNavbar userButton"></a>
+                <button class="buttonsInNavbar searchButton"></button>
+                <button class="hMenu" onclick="toggleClass()">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="courses">
+            <div class="text">
+                <h1>Kurslar</h1>
+            </div>
+            <div class="container">
+                <div class="choises">
+                    <div class="table">
+                        <form class="subjects">
+                            <h1>Bütün fənnlər</h1>
+                            <div class="checkbox">
+                                <input name="" type="checkbox">
+                                <p>Riyaziyyat</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>MİQ və Sertifikasiya</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Kimya</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>İngilis Dili</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Azərbaycan Dili</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Rus Dili</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Coğrafiya</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Tarix</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Biologiya</p>
+                            </div>
+
+                            <div class="checkbox">
+                                <input name="subject" type="checkbox">
+                                <p>Kurikulum</p>
+                            </div>
+
+
+                        </form>
+
+                        <form class="classes">
+                            <h1>Bütün siniflər</h1>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>1-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>2-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>3-cu sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>4-cu sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>5-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>6-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>7-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>8-ci sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>9-cu sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>10-cu sinif</p>
+                            </div>
+                            <div class="checkbox">
+                                <input name="class" type="checkbox">
+                                <p>11-ci sinif</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic1.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pictureForCourseCard">
+                            <img class="mainPictureForCard" src="./images/pic2.png" alt="şəkil yoxdur" />
+                            <button class="likeCircleForCourse"></button>
+                        </div>
+                        <div class="forStars"></div>
+                        <div class="dateAndName">
+                            <p class="dateCard">5:07:15 saat</p>
+                            <div class="dot"></div>
+                            <p class="name">Nailə Axundova</p>
+                        </div>
+                        <div class="nameOfCard">
+                            <h1>Funksiyalar və Qrafiklər</h1>
+                        </div>
+                        <div class="informationOfCard">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s
+                            </p>
+                        </div>
+                        <div class="buttonAndPrice">
+                            <button class="detailsButton">Ətraflı</button>
+                            <p>10 AZN <sup>ay</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo">
+            <div class="title">
+                <h1>SEO</h1>
+            </div>
+            <div class="text">
+                <div class="textContainer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <br>
+                    <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="textContainer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    <br>
+                    <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerTop">
+            <div class="part1">
+                <a href=""><img src="../images/Footer/instagram.png" alt="şəkil yoxdur" /></a>
+                <a href=""><img src="../images/Footer/facebook.png" alt="şəkil yoxdur" /></a>
+                <a href=""><img src="../images/Footer/twitter.png" alt="şəkil yoxdur" /></a>
+            </div>
+            <div class="part2">
+                <img src="../images/Footer/footerLogo.png" alt="şəkil yoxdur" />
+            </div>
+            <div class="part3">
+                <button>Hesabım</button>
+            </div>
+            <div class="part4">
+                <a href=""> +994 55 349 60 60</a>
+                <a href=""> info@rbacademy.az</a>
+            </div>
+            <div class="part5">
+                <a href="">Haqqımızda</a>
+                <a href="">Müəllimlər</a>
+                <a href="">Xəbərlər</a>
+            </div>
+            <div class="part6">
+                <a href="">Riyaziyyat</a>
+                <a href="">MİQ Riyaziyyat</a>
+                <a href="">Kimya</a>
+                <a href="">İngilis dili</a>
+            </div>
+            <div class="part7">
+                <a href="">İmtahanlar</a>
+                <a href="">Əlaqə</a>
+                <a href="">Kurslar</a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard</p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>© 2022 RBAcademy</p>
+            <p>Müəllif hüquqları qorunur</p>
+            <p class="lastWord">Site by:</p>
+        </div>
+    </footer>
+</body>
+<script src="../main.js"></script>
+
+</html>

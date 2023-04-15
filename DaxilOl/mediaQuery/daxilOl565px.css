@@ -1,0 +1,173 @@
+@media screen and (max-width: 565px) {
+  body {
+    border: solid 5px black;
+  }
+  body header .topPartHeader {
+    padding: 0 10px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo {
+    width: 260px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo .phone {
+    font-size: 13px;
+  }
+  body header .topPartHeader .gmailAndPhoneInfo .email {
+    font-size: 13px;
+  }
+  body header .topPartHeader .contactPart {
+    width: 120px;
+  }
+  body header .navbar .navbarButtons {
+    width: 240px;
+  }
+  body header .navbar .navbarButtons .hMenu {
+    display: flex;
+  }
+  body header .navbar .navbarLinks.active {
+    transform: translateX(0);
+  }
+  body header .navbar .navbarLinks {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 126px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+  }
+  body header .navbar .navbarLinks .links {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+  }
+  body header .navbar .navbarLinks .anotherLinks {
+    background-color: #e0e0e0;
+  }
+  body main .orangeCircle1,
+  body main .orangeCircle2,
+  body main .purpleRectangle,
+  body main .lightBlueRectangle {
+    display: none;
+  }
+  body main .daxilOl {
+    flex-direction: column;
+  }
+  body main .daxilOl .left {
+    width: 100%;
+    align-items: center;
+  }
+  body main .daxilOl .left h1 {
+    text-align: center;
+  }
+  body main .daxilOl .left .agreement {
+    width: 340px;
+    padding: 0 10px;
+  }
+  body main .daxilOl .right {
+    width: 100%;
+    align-items: center;
+  }
+  body main .daxilOl .right .lightBlueCircle {
+    bottom: 40px;
+  }
+  body main .daxilOl .right .purpleCircle {
+    left: 80px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .left .agreement {
+    flex-direction: column;
+    height: 50px !important;
+    padding: 0 !important;
+  }
+  .left .agreement input::after {
+    border: solid 1px red;
+  }
+}
+@media screen and (max-width: 1246px) {
+  .purpleRectangle {
+    display: none;
+  }
+}
+@media screen and (max-width: 948px) {
+  .orangeCircle1,
+  .orangeCircle2,
+  .lightBlueRectangle {
+    display: none;
+  }
+  .left {
+    align-items: center;
+    padding: 0 !important;
+  }
+  .right {
+    align-items: center;
+    padding: 0 !important;
+  }
+  .right p {
+    text-align: center;
+  }
+  .right button {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 833px) {
+  .left button,
+  .left input,
+  .left .password {
+    width: 80% !important;
+  }
+  .left .password #showHideButton {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .left .agreement {
+    padding: 0 !important;
+    flex-direction: column !important;
+    height: 50px !important;
+  }
+  .left .agreement input {
+    margin-right: 120px;
+  }
+  .left .agreement input::after {
+    width: 120px !important;
+    left: 150px !important;
+    top: -4px !important;
+  }
+  .navbarButtons .hMenu {
+    display: flex !important;
+  }
+  .navbarLinks.active {
+    transform: translateX(0);
+  }
+  .navbarLinks {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 192px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+  }
+  .navbarLinks .links {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+  }
+  .navbarLinks .anotherLinks {
+    background-color: #e0e0e0;
+  }
+}/*# sourceMappingURL=daxilOl565px.css.map */

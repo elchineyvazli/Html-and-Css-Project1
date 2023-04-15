@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #34485a;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+body header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body header .topPartHeader {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #3ad4d8;
+}
+body header .topPartHeader .gmailAndPhoneInfo {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .topPartHeader .gmailAndPhoneInfo .phone {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  border-right: solid 1px black;
+  padding-right: 12px;
+}
+body header .topPartHeader .gmailAndPhoneInfo .email {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+}
+body header .topPartHeader .contactPart {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .infoPage {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+body header .navbar .infoPage a {
+  font-size: 13px;
+  font-weight: 800;
+}
+body header .navbar .infoPage .pages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .navbar .infoPage .pages .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #3AD4D8;
+  border-radius: 50%;
+}
+body header .navbar .infoPage .pages .red {
+  color: red;
+}
+body header .navbar .logo {
+  width: 84px;
+  height: 58px;
+}
+body header .navbar .navbarLinks {
+  max-width: 861px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .navbarLinks .links {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #181818;
+  display: inline-block;
+  position: relative;
+}
+body header .navbar .navbarLinks .links::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+body header .navbar .navbarLinks .links:hover::after {
+  width: 100%;
+  left: 0;
+}
+body header .navbar .navbarLinks .links:nth-child(5)::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #3AD4D8;
+  width: 100%;
+}
+body header .navbar .navbarButtons {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .navbarButtons .buttonsInNavbar {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  transition: 0.6s ease-out;
+}
+body header .navbar .navbarButtons .buttonsInNavbar:hover {
+  cursor: pointer;
+  background-color: #671c7c;
+}
+body header .navbar .navbarButtons .likeButton {
+  background-image: url("../../images/Header/like.png");
+  background-repeat: no-repeat;
+  background-size: 55% 50%;
+  background-position: center;
+}
+body header .navbar .navbarButtons .likeButton:hover {
+  background-image: url("../../images/Header/likeHover.png");
+}
+body header .navbar .navbarButtons .userButton {
+  background-image: url("../../images/Header/user.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body header .navbar .navbarButtons .userButton:hover {
+  background-image: url("../../images/Header/userHover.png");
+}
+body header .navbar .navbarButtons .searchButton {
+  background-image: url("../../images/Header/search.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body header .navbar .navbarButtons .searchButton:hover {
+  background-image: url("../../images/Header/searchHover.png");
+}
+body header .navbar .navbarButtons .hMenu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+body header .navbar .navbarButtons .hMenu .line {
+  width: 35px;
+  height: 4px;
+  border: none;
+  background-color: #671c7c;
+  border-radius: 2px;
+}
+body main {
+  width: 100%;
+  display: flex;
+}
+body main .graduate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main .graduate .graduateText {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body main .graduate .graduateText h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+}
+body main .graduate .graduateText p {
+  text-align: center;
+  width: 50%;
+}
+body main .graduate .graduateCards {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body main .graduate .graduateCards .graduateCard {
+  width: 315px;
+  height: 454px;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .graduate .graduateCards .graduateCard:hover .graduateCardBottom {
+  height: 160px;
+}
+body main .graduate .graduateCards .graduateCard:hover .graduateCardBottom p {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body main .graduate .graduateCards .graduateCard:hover {
+  height: 542px;
+  transition: 0.2s;
+}
+body main .graduate .graduateCards .graduateCard .graduateCardTop {
+  width: 100%;
+  height: 228px;
+}
+body main .graduate .graduateCards .graduateCard .graduateCardTop img {
+  width: 100%;
+  height: 100%;
+}
+body main .graduate .graduateCards .graduateCard .graduateCardBottom {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main .graduate .graduateCards .graduateCard .graduateCardBottom h3 {
+  font-size: 14px;
+  color: red;
+  font-weight: 600;
+}
+body main .graduate .graduateCards .graduateCard .graduateCardBottom p {
+  display: none;
+}
+body main .graduate .graduateCards .graduateCard .forPrice {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+body main .graduate .graduateCards .graduateCard .forPrice h2 {
+  color: #671c7c;
+  font-weight: 800;
+}
+body footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #671C7C;
+}
+body footer a,
+body footer p {
+  color: white;
+}
+body footer .footerTop {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body footer .footerTop .part1 {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body footer .footerTop .part2 {
+  width: 20%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .footerTop .part2 img {
+  width: 107px;
+  height: 79px;
+}
+body footer .footerTop .part3 {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+body footer .footerTop .part3 button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: #3ad4d8;
+  border-radius: 20px;
+  color: #671C7C;
+  font-weight: 700;
+  transition: 0.6s;
+  cursor: pointer;
+}
+body footer .footerTop .part3 button:hover {
+  background-color: #543ee9;
+  color: white;
+}
+body footer .footerTop .part4 {
+  width: 30%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part5 {
+  width: 20%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part6 {
+  width: 20%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerTop .part7 {
+  width: 30%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .footerBottom {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body footer .footerBottom .lastWord::after {
+  content: " JedAi";
+}/*# sourceMappingURL=mezunlarimiz.css.map */

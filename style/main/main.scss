@@ -1,0 +1,1748 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #34485a;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  // border: solid 2px red;
+}
+
+.startNowButton {
+  width: 167px;
+  height: 50px;
+  background: #543ee9;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 15px;
+}
+
+body {
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .topPartHeader {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      background-color: #3ad4d8;
+
+      .gmailAndPhoneInfo {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .phone {
+          font-size: 15px;
+          font-weight: 600;
+          display: inline-block;
+          border-right: solid 1px black;
+          padding-right: 12px;
+        }
+
+        .email {
+          font-size: 15px;
+          font-weight: 600;
+          display: inline-block;
+        }
+      }
+
+      .contactPart {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .navbar {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .logo {
+        width: 84px;
+        height: 58px;
+      }
+
+      .navbarLinks {
+        max-width: 861px;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-around;
+
+        .links {
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          color: #181818;
+          display: inline-block;
+          position: relative;
+
+          &::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+
+      .navbarButtons {
+        width: 280px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .buttonsInNavbar {
+          width: 50px;
+          height: 50px;
+          background-color: transparent;
+          border-radius: 50%;
+          border: none;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+          transition: 0.6s ease-out;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #671c7c;
+          }
+        }
+
+        .likeButton {
+          background-image: url("../../images/Header/like.png");
+          background-repeat: no-repeat;
+          background-size: 55% 50%;
+          background-position: center;
+
+          &:hover {
+            background-image: url("../../images/Header/likeHover.png");
+          }
+        }
+
+        .userButton {
+          background-image: url("../../images/Header/user.png");
+          background-size: 55% 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &:hover {
+            background-image: url("../../images/Header/userHover.png");
+          }
+        }
+
+        .searchButton {
+          background-image: url("../../images/Header/search.png");
+          background-size: 55% 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &:hover {
+            background-image: url("../../images/Header/searchHover.png");
+          }
+        }
+
+        .hMenu {
+          width: 40px;
+          height: 40px;
+          border: none;
+          border-radius: 40%;
+          background-color: white;
+          display: none;
+          flex-direction: column;
+          gap: 6px;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+
+          .line {
+            width: 35px;
+            height: 4px;
+            border: none;
+            background-color: #671c7c;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+    .middleHeader {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+
+      .topMiddleHeader {
+        width: 100%;
+        display: flex;
+
+        .infoTopMiddleHeader {
+          width: 50%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+          padding-left: 40px;
+          gap: 20px;
+
+          .infoTextOfHeader {
+            color: #181818;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 60px;
+            text-transform: capitalize;
+            width: 400px;
+          }
+
+          .subTextOfHeader {
+            font-size: 16px;
+            line-height: 19px;
+            color: #181818;
+          }
+
+          .startNowButton {
+            width: 167px;
+            height: 50px;
+            background: #543ee9;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.6s;
+
+            &:hover {
+              background-color: white;
+              color: #543ee9;
+              border: solid 1px #543ee9;
+            }
+          }
+        }
+
+        .pictureTopMiddleHeader {
+          width: 50%;
+          height: 550px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          .mainPicture {
+            width: 453px;
+            height: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../../images/MiddleHeader/childrenPicture.png");
+            background-repeat: no-repeat;
+            background-position: center;
+
+            .circleOfPause {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              background: rgba(84, 62, 233, 0.8);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .purpleRectangle {
+            position: absolute;
+            z-index: -1;
+            left: 220px;
+            width: 450px;
+          }
+
+          .lightBlueRectangle {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            z-index: -2;
+            left: 0;
+            bottom: 170px;
+          }
+
+          .lightBlueCircle {
+            position: absolute;
+            z-index: 4;
+            bottom: 80px;
+            left: 260px;
+          }
+
+          .purpleCircle {
+            position: absolute;
+            z-index: -1;
+            top: 20px;
+            left: 130px;
+          }
+
+          .orangeCircle {
+            position: absolute;
+            z-index: -3;
+            top: 10px;
+            right: 90px;
+          }
+        }
+      }
+
+      .bottomMiddleHeader {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .switchButtons {
+          width: 10px;
+          height: 10px;
+          border: none;
+          background: #42c0c4;
+          border-radius: 50%;
+
+          &:hover {
+            background-color: #671c7c;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .info {
+      width: 100%;
+      display: flex;
+
+      .infoPicture {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .purpleSquare {
+          position: absolute;
+          top: -50px;
+          right: 10px;
+          z-index: -1;
+        }
+
+        .lightBlueSquare {
+          position: absolute;
+          bottom: -35px;
+          left: 67px;
+          z-index: -2;
+        }
+
+        .purpleCircle {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 160px;
+        }
+
+        .orangeCircle {
+          position: absolute;
+          z-index: 1;
+          bottom: -10px;
+          left: 145px;
+        }
+      }
+
+      .infoText {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        button {
+          width: 150px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #543ee9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          cursor: pointer;
+          transition: 0.6s;
+
+          &:hover {
+            background-color: white;
+            border: solid 1px #543ee9;
+            color: #543ee9;
+          }
+        }
+      }
+    }
+
+    .popularCourse {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .textArea {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: black;
+        gap: 10px;
+
+        h1 {
+          font-weight: 900;
+          font-size: 30px;
+        }
+
+        p {
+          width: 50%;
+          text-align: center;
+        }
+
+        .purpleCircle {
+          position: absolute;
+          top: 20px;
+          right: 200px;
+        }
+      }
+
+      .cardsInPopularCourse {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+
+
+        .cardForCourse {
+          width: 300px;
+          height: 400px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+
+          .mainPictureForCard {
+            width: 100%;
+          }
+
+          .likeCircleForCourse {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url("../../images/Header/like.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60% 60%;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 1;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+            cursor: pointer;
+          }
+
+          .dateAndName {
+            width: 85%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .dot {
+              width: 3px;
+              height: 3px;
+              background-color: #3ad4d8;
+            }
+
+            .dateCard,
+            .name {
+              display: block;
+              color: red;
+            }
+          }
+
+          p,
+          sup {
+            display: none;
+            color: #3ad4d8;
+          }
+
+          .nameOfCard {
+            width: 85%;
+            font-size: 14px;
+          }
+
+          .buttonAndPrice {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .detailsButton {
+              width: 150px;
+              height: 40px;
+              border-radius: 20px;
+              background-color: #543ee9;
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: none;
+              cursor: pointer;
+              transition: 0.6s;
+
+              &:hover {
+                background-color: white;
+                color: #543ee9;
+                border: 1px solid #353535;
+              }
+            }
+          }
+        }
+      }
+
+      .buttonPartForPopularCourse {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .showAllButton {
+          width: 150px;
+          height: 40px;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+          background-color: white;
+          border: none;
+          cursor: pointer;
+          transition: 0.6s;
+
+          &:hover {
+            border: 1px solid #353535;
+            background-color: #543ee9;
+            color: white;
+          }
+        }
+
+        .purpleCircleInButtonPart {
+          position: absolute;
+          top: 30px;
+          left: 300px;
+        }
+      }
+    }
+
+    .aboutNaila {
+      width: 100%;
+      height: 400px;
+      background-color: #e2eaf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .containerAboutNaila {
+        width: 80%;
+        height: 346px;
+        display: flex;
+
+        .textForContainerAboutNaila {
+          width: 56%;
+          height: 346px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+
+          .blueWordAboutNaila {
+            color: blue;
+          }
+
+          h1 {
+            font-size: 40px;
+            font-weight: 900;
+          }
+
+          p {
+            width: 98%;
+            font-weight: 500;
+            overflow-x: hidden;
+          }
+
+          .signInButton {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #543ee9;
+            color: white;
+            border: none;
+            transition: 0.6s;
+            border-radius: 25px;
+            cursor: pointer;
+
+            &:hover {
+              color: #543ee9;
+              background-color: white;
+              border: 1px solid #353535;
+            }
+          }
+        }
+      }
+    }
+
+    .onlineLesson {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .textOnlineLesson {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 800;
+        }
+
+        p {
+          width: 50%;
+          text-align: center;
+        }
+      }
+
+      .cardsOnlineLesson {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+
+        .cardOnlineLesson {
+          width: 399px;
+          height: 313px;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 8px;
+          padding: 10px;
+
+          .number1 {
+            color: #fe5538;
+            font-size: 30px;
+            font-weight: 800;
+          }
+        }
+
+        .cardOnlineLesson2 {
+          width: 399px;
+          height: 313px;
+          background-image: url("../../images/OnlineLesson/childWithPen.png");
+          background-size: 100% 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 20px;
+
+          p {
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+          }
+
+          h1 {
+            color: #52dec1;
+            font-size: 30px;
+            font-weight: 800;
+          }
+        }
+
+        .cardOnlineLesson3 {
+          width: 399px;
+          height: 313px;
+          background-image: url("../../images/OnlineLesson/girlWithBook.png");
+          background-size: 100% 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 20px;
+
+          p {
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+          }
+
+          h1 {
+            color: #d6a7f9;
+            font-size: 30px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    .onlineExams {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .textOnlineExams {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          font-weight: 800;
+          font-size: 30px;
+        }
+
+        p {
+          font-weight: 500;
+          width: 60%;
+          text-align: center;
+        }
+      }
+
+      .cardsOnlineExams {
+        height: 640px;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        padding: 0 40px;
+
+        .cardOnlineExams {
+          width: 399px;
+          height: 548px;
+          box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .cardOnlineExamsTop {
+            width: 100%;
+            height: 228px;
+          }
+
+          .cardOnlineExamsBottom {
+            width: 100%;
+            padding: 10px;
+
+            .nameAndExamOnlineExams {
+              width: 100%;
+              height: 40px;
+
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              p {
+                color: red;
+              }
+
+              .dot {
+                width: 4px;
+                height: 4px;
+                background-color: #3ad4d8;
+                border-radius: 50%;
+              }
+            }
+
+            .forHoverText {
+              width: 100%;
+              height: 185px;
+            }
+
+            .buttonAndPriceOnlineExams {
+              width: 100%;
+              height: 50px;
+
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+
+              .detailsButton {
+                width: 140px;
+                height: 46px;
+                border-radius: 23px;
+                border: none;
+                background-color: #543ee9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 0.6s;
+
+                &:hover {
+                  color: #000;
+                  background-color: white;
+                }
+              }
+
+              p {
+                color: #671c7c;
+                font-size: 16px;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+      }
+
+      .switchArrowsAndButton {
+        .arrows {
+          width: 100%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+
+          .undoButton {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background-color: white;
+            background-image: url("../images/OnlineExams/lefttSwitchArrow.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+          }
+
+          .redoButton {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            background-color: white;
+            background-image: url("../images/OnlineExams/rightSwitchArrow.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+          }
+        }
+
+        .buttonArea {
+          width: 100%;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+            cursor: pointer;
+            transition: 0.6s;
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 0px;
+              height: 1px;
+              position: absolute;
+              left: 53px;
+              top: 26px;
+              background-color: #000;
+              transition: 0.5s;
+            }
+
+            &:hover::after {
+              width: 44px;
+            }
+          }
+        }
+      }
+    }
+
+    .scienceAcademic {
+      width: 100%;
+      height: 704px;
+      background-color: #e2eaf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .containerScienceAcademic {
+        width: 90%;
+        height: 500px;
+        display: flex;
+
+        .pictureScienceAcademic {
+          width: 55%;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-right: 30px;
+          position: relative;
+
+          .mainPicture {
+            width: 461px;
+            height: 344px;
+            background-image: url("../../images/ScienceAcademic/mainPictureScienceAcademic.png");
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            button {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              background-image: url("../../images/MiddleHeader/pause.png");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-color: rgba(84, 62, 233, 0.8);
+              border: none;
+              cursor: pointer;
+              transition: 0.6s;
+
+              &:hover {
+                background-size: 60% 60%;
+              }
+            }
+          }
+
+          .lightBlueRectangle {
+            position: absolute;
+            top: -40px;
+            left: 0px;
+          }
+
+          .purpleRectangle {
+            position: absolute;
+            right: 0px;
+            bottom: -30px;
+          }
+
+          .purpleCircle {
+            position: absolute;
+            top: 0;
+            left: 100px;
+          }
+
+          .orangeCircle {
+            position: absolute;
+            bottom: -60px;
+            right: 200px;
+          }
+        }
+
+        .infoScienceAcademic {
+          width: 45%;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+
+          h3 {
+            color: #543ee9;
+            font-size: 16px;
+          }
+
+          h1 {
+            font-size: 33px;
+            font-weight: 900;
+            color: #181818;
+          }
+
+          p {
+            font-size: 15px;
+          }
+
+          button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            background-color: #543ee9;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.6s;
+
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .comments {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .commentsText {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 1000;
+        }
+      }
+
+      .commentsCards {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .commentsCard {
+          width: 315px;
+          height: 382px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+          position: relative;
+          padding-top: 60px;
+          gap: 10px;
+          padding: 0 20px;
+
+          &:hover button {
+            display: flex;
+            transition: 0.6s;
+          }
+
+          .forPicture {
+            width: 100%;
+            height: 70px;
+
+            display: flex;
+            align-items: center;
+          }
+
+          .bottom {
+            width: 100%;
+            height: 232px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+            }
+
+            .subject {
+              font-weight: 700;
+              color: red;
+            }
+
+            .information {
+              overflow-x: auto;
+            }
+          }
+
+          button {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+            background-image: url("../images/Comments/arrowButton.png");
+            background-size: 110% 110%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #543ee9;
+          }
+        }
+      }
+    }
+
+    .graduate {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .graduateText {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 900;
+          color: black;
+        }
+
+        p {
+          text-align: center;
+          width: 50%;
+        }
+      }
+
+      .graduateCards {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .graduateCard {
+          width: 310px;
+          height: 454px;
+          box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          &:hover .graduateCardBottom {
+            height: 160px;
+
+            p {
+              display: flex;
+              overflow-x: hidden;
+              overflow-y: auto;
+            }
+          }
+
+          &:hover {
+            height: 542px;
+            transition: 0.2s;
+          }
+
+          .graduateCardTop {
+            width: 100%;
+            height: 228px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .graduateCardBottom {
+            width: 100%;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+              font-size: 14px;
+              color: red;
+              font-weight: 600;
+            }
+
+            p {
+              display: none;
+            }
+          }
+
+          .forPrice {
+            width: 100%;
+            height: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 20px;
+
+            h2 {
+              color: #671c7c;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+
+      .buttonArea {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          width: 150px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          background-color: white;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+          color: black;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: 0.6s;
+
+          &:hover {
+            background-color: #543ee9;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .forMath {
+      width: 100%;
+      display: flex;
+      background-color: #e2eaf8;
+
+      .forText {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding-left: 60px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 1000;
+        }
+
+        p {
+          width: 85%;
+        }
+      }
+
+      .forPicture {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .certificate {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .forText {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 1000;
+        }
+
+        p {
+          width: 50%;
+          text-align: center;
+        }
+      }
+
+      .carousel {
+        width: 100%;
+        height: 550px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .gallery {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin: 10px auto;
+          text-align: center;
+          position: relative;
+
+          .buttons {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            top: 50%;
+            font-size: 3em;
+            font-weight: bold;
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              color: #4d4d4d;
+            }
+          }
+
+          .photos {
+            position: relative;
+            height: 400px;
+            scale: 1.2;
+            left: -100px;
+            top: 70px;
+
+            .block {
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              opacity: 0;
+              transition: opacity 1s;
+            }
+
+            .block.active {
+              opacity: 1;
+            }
+          }
+        }
+
+        button {
+          width: 150px;
+          height: 40px;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          background-color: white;
+          color: black;
+          font-size: 14px;
+          cursor: pointer;
+          transition: 0.6s;
+
+          &:hover {
+            background-color: #671c7c;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .books {
+      width: 100%;
+      height: 620px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .forText {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 1000;
+        }
+
+        p {
+          width: 50%;
+          text-align: center;
+        }
+      }
+
+      .forCarousel {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+
+        .owl-books {
+          width: 88%;
+          height: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .item {
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .allButton {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.6s;
+
+        &:hover {
+          background-color: #543ee9;
+          color: white;
+        }
+      }
+    }
+
+    .news {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .newsText {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 1000;
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 15px;
+          width: 45%;
+          text-align: center;
+        }
+      }
+
+      .newsCards {
+        width: 100%;
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .newsCard {
+          width: 315px;
+          height: 428px;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+
+          &:hover .button {
+            display: block;
+          }
+
+          &:hover .cardTop {
+            padding: 10px;
+          }
+
+          .cardTop {
+            width: 100%;
+            height: 228px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .cardBottom {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+
+            .info {
+              width: 100%;
+              height: 100px;
+              display: flex;
+              flex-direction: column;
+
+              h1 {
+                font-size: 20px;
+              }
+
+              p {
+                font-size: 15px;
+              }
+            }
+
+            .timeAndButton {
+              width: 100%;
+              height: 45px;
+              display: flex;
+              justify-content: space-between;
+              padding: 0 20px;
+              position: relative;
+
+              h2 {
+                color: #fe5538;
+                font-size: 15px;
+                font-weight: 800;
+
+                &::after {
+                  content: "İyun";
+                  color: black;
+                  font-weight: 600;
+                  font-size: 14px;
+                  position: absolute;
+                  bottom: 5px;
+                  left: 20px;
+                }
+              }
+
+              .arrowButton {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-image: url("../images/Comments/arrowButton.png");
+                box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 105% 105%;
+                background-color: #543ee9;
+                border: none;
+                cursor: pointer;
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 400px;
+    background-color: #671c7c;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    .footerTop {
+      width: 100%;
+      display: flex;
+
+      .part1 {
+        width: 25%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .part2 {
+        width: 16%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        gap: 20px;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .part3 {
+        width: 16%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        gap: 20px;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .part4 {
+        width: 16%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        gap: 20px;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .part5 {
+        width: 15%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        gap: 20px;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .part6 {
+        width: 12%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+
+    .footerBottom {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: white;
+        font-size: 12px;
+      }
+
+      .lastWord::after {
+        content: " JedAi";
+        font-weight: 800;
+      }
+    }
+  }
+}
